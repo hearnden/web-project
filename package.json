@@ -1,0 +1,20 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^18",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.19"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  }
+}

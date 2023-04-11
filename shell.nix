@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
   packages = with pkgs; [
-    # List packages here.
-    # Example: nodejs-18_x yarn
+    nodejs-18_x
+    yarn
   ];
 }

@@ -1,20 +1,13 @@
-# nix-project
+# web-project
 
-This repo is a skeleton layout for a project using:
- - [Nix](https://nixos.org/) for dependency management, and
- - [Direnv](https://direnv.net/) for provisioning a shell CLI environment.
+This repo is a skeleton layout for a clientside web-app project using:
+ - [Yarn](https://yarnpkg.com/) for app package management;
+ - [Webpack](https://webpack.js.org/) for app bundling; and
+ - [TypeScript](https://www.typescriptlang.org/) for app source.
 
-Clone it, amend this README, and update the packages in `shell.nix`.
+It is forked from [nix-project](https://github.com/hearnden/nix-project), which uses Nix for system package management (Node and Yarn).
 
-## Notes
-
-This skeleton does not yet use [Flakes](https://nixos.wiki/wiki/Flakes).
-
-One of Nix's goals is to be a tool for reproducible environments.
-Every other reproducible-environment tool uses lock files (e.g., `yarn.lock`, `maven_install.json`, ...).
-Flakes are an upcoming feature, 20 years after Nix's initial release, to make Nix use lockfiles.
-
-Once Flakes are ready, they will be the right way to use Nix.
+Clone it, amend this README, and update the packages in `package.json`.
 
 ## Setup
 
@@ -57,3 +50,18 @@ direnv allow
 ```
 This will execute `.envrc` (which will activate the `nix-shell`) when you `cd` into this project.
 The first time you do this, the dev environment will be downloaded and installed by nix.
+
+Finally, run
+```
+yarn
+```
+to install all the application packages, then add and commit the generated `yarn.lock`.
+
+## Build
+
+The full list of commands can be found in `package.json`.
+```
+yarn build
+```
+
+This will emit the app and static assets in `dist/index.html`.
