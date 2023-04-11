@@ -18,10 +18,13 @@ Once Flakes are ready, they will be the right way to use Nix.
 
 ## Setup
 
-This project requires Nix be globally installed: [nix](https://nixos.org/).
+This project requires [nix](https://nixos.org/) to be globally installed.
+
 It also requires [direnv](https://direnv.net/), to be globally installed, which can be done through Nix.
 
-### Global Setup
+Once both are installed, `direnv allow` on this project directory will take care of everything else.
+
+### Nix
 
 Install [nix](https://nixos.org/download).
 
@@ -30,6 +33,8 @@ Install [nix](https://nixos.org/download).
 | MacOS         | `sh <(curl -L https://nixos.org/nix/install)`             |
 | Linux         | `sh <(curl -L https://nixos.org/nix/install) --daemon`    |
 | Windows (WSL) | `sh <(curl -L https://nixos.org/nix/install) --no-daemon` |
+
+### direnv
 
 Install [direnv](https://direnv.net/) and [nix-direnv](https://github.com/nix-community/nix-direnv).
 ```
@@ -44,7 +49,7 @@ Hook direnv into your shell.
 | Bash  | `echo 'if hash direnv; then eval "$(direnv hook bash)"; fi' >>~/.bash_profile` |
 | Zsh   | `echo 'if hash direnv; then eval "$(direnv hook zsh)"; fi' >>~/.zshrc`         |
 
-### Local
+### Project
 
 After checking out this project, run:
 ```
