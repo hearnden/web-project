@@ -1,11 +1,8 @@
 {
   "name": "web-project",
   "version": "1.0.0",
-  "engines": {
-    "node": "^22",
-    "npm": "please-use-yarn",
-    "yarn": "please-use-pnpm",
-    "pnpm": ">= 10.17.0"
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
   },
   "scripts": {
     "build": "webpack"
