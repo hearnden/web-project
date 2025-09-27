@@ -1,11 +1,11 @@
 # web-project
 
 This repo is a skeleton layout for a clientside web-app project using:
- - [Yarn](https://yarnpkg.com/) for app package management;
+ - [Pnpm](https://pnpm.io/) for app package management;
  - [Webpack](https://webpack.js.org/) for app bundling; and
  - [TypeScript](https://www.typescriptlang.org/) for app source.
 
-It is forked from [nix-project](https://github.com/hearnden/nix-project), which uses Nix for system package management (Node and Yarn).
+It is forked from [nix-project](https://github.com/hearnden/nix-project), which uses Nix for system package management (Node and Pnpm).
 
 Clone it, amend this README, and update the packages in `package.json`.
 
@@ -53,15 +53,15 @@ The first time you do this, the dev environment will be downloaded and installed
 
 Finally, run
 ```
-yarn
+pnpm
 ```
-to install all the application packages, then add and commit the generated `yarn.lock`.
+to install all the application packages, then add and commit the generated `pnpm-lock.yaml`.
 
 ## Build
 
 The full list of commands can be found in `package.json`.
 ```
-yarn build
+pnpm build
 ```
 
 This will emit the app and static assets in `dist/index.html`.

@@ -2,7 +2,8 @@
 
 pkgs.mkShell {
   packages = with pkgs; [
-    nodejs-18_x
-    yarn
+    nodejs_22
+    # pnpm uses nodejs 22
+    pnpm
   ];
 }
