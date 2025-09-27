@@ -53,7 +53,7 @@ The first time you do this, the dev environment will be downloaded and installed
 
 Finally, run
 ```
-pnpm
+pnpm install
 ```
 to install all the application packages, then add and commit the generated `pnpm-lock.yaml`.
 
